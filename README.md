@@ -4,7 +4,7 @@
 # Bachelor Thesis Elias Tilegant
 ## Code for Zigbee remote valve control
 
-### Settings for build with ESP-IDF VSCode:
+### Settings for build with [ESP-IDF](https://docs.espressif.com/projects/esp-idf/en/v4.2.3/esp32/get-started/vscode-setup.html) VSCode:
 - Target = esp32c6
 - Port = depending on your system
 - Flash-Mode = depends, usually UART
