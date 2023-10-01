@@ -1,42 +1,32 @@
-/*
- * SPDX-FileCopyrightText: 2021-2023 Espressif Systems (Shanghai) CO LTD
- *
- * SPDX-License-Identifier: LicenseRef-Included
- *
- * Redistribution and use in source and binary forms, with or without modification,
- * are permitted provided that the following conditions are met:
- *
- * 1. Redistributions of source code must retain the above copyright notice,
- *    this list of conditions and the following disclaimer.
- *
- * 2. Redistributions in binary form, except as embedded into a Espressif Systems
- *    integrated circuit in a product or a software update for such product,
- *    must reproduce the above copyright notice, this list of conditions and
- *    the following disclaimer in the documentation and/or other materials
- *    provided with the distribution.
- *
- * 3. Neither the name of the copyright holder nor the names of its contributors
- *    may be used to endorse or promote products derived from this software without
- *    specific prior written permission.
- *
- * 4. Any software provided in binary form under this license must not be reverse
- *    engineered, decompiled, modified and/or disassembled.
- *
- * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
- * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
- * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
- * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
- * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
- * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
- * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
- * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
- * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
- * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
- * POSSIBILITY OF SUCH DAMAGE.
+/**
+ * This is a header for an ESP32-based Zigbee on/off valve device that can be controlled remotely.
+ * 
+ * @author Elias Josh Tilegant, Espressif Systems, Seong-Woo Kim
+ * @date 01.10.2023
+ * @version 0.1
+ * @see https://github.com/Koenkk/zigbee-herdsman-converters
+ * @see https://github.com/espressif/esp-idf
+ * @see https://github.com/espressif/esp-zigbee-sdk
+ * 
+ * @note This code is a fork based on the esp-idf/examples/zigbee/esp_zb_light.h example code. (https://github.com/espressif/esp-zigbee-sdk/tree/main/examples/esp_zigbee_HA_sample/HA_on_off_light)
+ * 
  */
 
 #include "esp_zigbee_core.h"
-#include "light_driver.h"
+
+/* ADC config */
+#define VOLTAGE_DIVIDER_R1 10000.0  // 10k resistor
+#define VOLTAGE_DIVIDER_R2 4700.0   // 4.7k resistor
+#define ADC_MAX_VALUE      4095.0  // 12-bit ADC
+#define ADC_REFERENCE_VOLTAGE 3.3
+#define BATTERY_VOLTAGE_MIN 2.5 // 18650 battery minimum voltage
+#define BATTERY_VOLTAGE_MAX 4.2 // max
+// #define ESP_ZB_ZCL_ATTR_BASIC_BATTERY_PERCENTAGE_ID 0x4000  
+#define ESP_ZB_ZCL_ATTR_POWER_CONFIGURATION_BATTERY_PERCENTAGE_REMAINING_ID 0x0021  // standard Zigbee attribute ID for battery percentage
+
+// valve pins
+#define VALVE_ON_PIN  GPIO_NUM_4 // v on
+#define VALVE_OFF_PIN GPIO_NUM_5 // v off
 
 /* Zigbee configuration */
 #define INSTALLCODE_POLICY_ENABLE       false    /* enable the install code policy for security */

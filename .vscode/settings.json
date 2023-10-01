@@ -1,5 +1,6 @@
 {
     "idf.port": "/dev/cu.SLAB_USBtoUART",
     "idf.adapterTargetName": "esp32c6",
-    "idf.flashType": "UART"
+    "idf.flashType": "UART",
+    "docwriter.progress.trackFunctions": true
 }
