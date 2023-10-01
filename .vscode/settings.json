@@ -1,9 +1,0 @@
-{
-    "idf.port": "/dev/cu.SLAB_USBtoUART",
-    "idf.adapterTargetName": "esp32c6",
-    "idf.flashType": "UART",
-    "docwriter.progress.trackFunctions": true,
-    "files.associations": {
-        "esp_zb_valve.h": "c"
-    }
-}
