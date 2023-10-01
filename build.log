@@ -1,0 +1,80 @@
+[0/1] Re-running CMake...
+-- Building ESP-IDF components for target esp32c6
+Processing 4 dependencies:
+[1/4] espressif/esp-zboss-lib (0.5.4)
+[2/4] espressif/esp-zigbee-lib (0.7.4)
+[3/4] espressif/led_strip (2.0.0)
+[4/4] idf (5.1.0)
+-- Project sdkconfig file /Users/statusC/esp/z_github/HA_on_off_light/sdkconfig
+Loading defaults file /Users/statusC/esp/z_github/HA_on_off_light/sdkconfig.defaults...
+-- App "light_bulb" version: eee6b64-dirty
+-- Adding linker script /Users/statusC/esp/z_github/HA_on_off_light/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /Users/statusC/esp/esp-idf/components/esp_system/ld/esp32c6/sections.ld.in
+-- Adding linker script /Users/statusC/esp/esp-idf/components/esp_rom/esp32c6/ld/esp32c6.rom.ld
+-- Adding linker script /Users/statusC/esp/esp-idf/components/esp_rom/esp32c6/ld/esp32c6.rom.api.ld
+-- Adding linker script /Users/statusC/esp/esp-idf/components/esp_rom/esp32c6/ld/esp32c6.rom.rvfp.ld
+-- Adding linker script /Users/statusC/esp/esp-idf/components/esp_rom/esp32c6/ld/esp32c6.rom.newlib.ld
+-- Adding linker script /Users/statusC/esp/esp-idf/components/esp_rom/esp32c6/ld/esp32c6.rom.version.ld
+-- Adding linker script /Users/statusC/esp/esp-idf/components/esp_rom/esp32c6/ld/esp32c6.rom.phy.ld
+-- Adding linker script /Users/statusC/esp/esp-idf/components/esp_rom/esp32c6/ld/esp32c6.rom.coexist.ld
+-- Adding linker script /Users/statusC/esp/esp-idf/components/esp_rom/esp32c6/ld/esp32c6.rom.net80211.ld
+-- Adding linker script /Users/statusC/esp/esp-idf/components/esp_rom/esp32c6/ld/esp32c6.rom.pp.ld
+-- Adding linker script /Users/statusC/esp/esp-idf/components/esp_rom/esp32c6/ld/esp32c6.rom.wdt.ld
+-- Adding linker script /Users/statusC/esp/esp-idf/components/esp_rom/esp32c6/ld/esp32c6.rom.newlib-normal.ld
+-- Adding linker script /Users/statusC/esp/esp-idf/components/esp_rom/esp32c6/ld/esp32c6.rom.heap.ld
+-- Adding linker script /Users/statusC/esp/esp-idf/components/soc/esp32c6/ld/esp32c6.peripherals.ld
+zigbee-cbce221e88-eee6b64-0.5.4-2023-10-01 18:32:51 UTC
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_coex esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump espressif__esp-zboss-lib espressif__esp-zigbee-lib espressif__led_strip esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls mqtt newlib nvs_flash openthread partition_table protobuf-c protocomm pthread riscv sdmmc soc spi_flash spiffs tcp_transport ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant
+-- Component paths: /Users/statusC/esp/esp-idf/components/app_trace /Users/statusC/esp/esp-idf/components/app_update /Users/statusC/esp/esp-idf/components/bootloader /Users/statusC/esp/esp-idf/components/bootloader_support /Users/statusC/esp/esp-idf/components/bt /Users/statusC/esp/esp-idf/components/cmock /Users/statusC/esp/esp-idf/components/console /Users/statusC/esp/esp-idf/components/cxx /Users/statusC/esp/esp-idf/components/driver /Users/statusC/esp/esp-idf/components/efuse /Users/statusC/esp/esp-idf/components/esp-tls /Users/statusC/esp/esp-idf/components/esp_adc /Users/statusC/esp/esp-idf/components/esp_app_format /Users/statusC/esp/esp-idf/components/esp_coex /Users/statusC/esp/esp-idf/components/esp_common /Users/statusC/esp/esp-idf/components/esp_eth /Users/statusC/esp/esp-idf/components/esp_event /Users/statusC/esp/esp-idf/components/esp_gdbstub /Users/statusC/esp/esp-idf/components/esp_hid /Users/statusC/esp/esp-idf/components/esp_http_client /Users/statusC/esp/esp-idf/components/esp_http_server /Users/statusC/esp/esp-idf/components/esp_https_ota /Users/statusC/esp/esp-idf/components/esp_https_server /Users/statusC/esp/esp-idf/components/esp_hw_support /Users/statusC/esp/esp-idf/components/esp_lcd /Users/statusC/esp/esp-idf/components/esp_local_ctrl /Users/statusC/esp/esp-idf/components/esp_mm /Users/statusC/esp/esp-idf/components/esp_netif /Users/statusC/esp/esp-idf/components/esp_netif_stack /Users/statusC/esp/esp-idf/components/esp_partition /Users/statusC/esp/esp-idf/components/esp_phy /Users/statusC/esp/esp-idf/components/esp_pm /Users/statusC/esp/esp-idf/components/esp_psram /Users/statusC/esp/esp-idf/components/esp_ringbuf /Users/statusC/esp/esp-idf/components/esp_rom /Users/statusC/esp/esp-idf/components/esp_system /Users/statusC/esp/esp-idf/components/esp_timer /Users/statusC/esp/esp-idf/components/esp_wifi /Users/statusC/esp/esp-idf/components/espcoredump /Users/statusC/esp/z_github/HA_on_off_light/managed_components/espressif__esp-zboss-lib /Users/statusC/esp/z_github/HA_on_off_light/managed_components/espressif__esp-zigbee-lib /Users/statusC/esp/z_github/HA_on_off_light/managed_components/espressif__led_strip /Users/statusC/esp/esp-idf/components/esptool_py /Users/statusC/esp/esp-idf/components/fatfs /Users/statusC/esp/esp-idf/components/freertos /Users/statusC/esp/esp-idf/components/hal /Users/statusC/esp/esp-idf/components/heap /Users/statusC/esp/esp-idf/components/http_parser /Users/statusC/esp/esp-idf/components/idf_test /Users/statusC/esp/esp-idf/components/ieee802154 /Users/statusC/esp/esp-idf/components/json /Users/statusC/esp/esp-idf/components/log /Users/statusC/esp/esp-idf/components/lwip /Users/statusC/esp/z_github/HA_on_off_light/main /Users/statusC/esp/esp-idf/components/mbedtls /Users/statusC/esp/esp-idf/components/mqtt /Users/statusC/esp/esp-idf/components/newlib /Users/statusC/esp/esp-idf/components/nvs_flash /Users/statusC/esp/esp-idf/components/openthread /Users/statusC/esp/esp-idf/components/partition_table /Users/statusC/esp/esp-idf/components/protobuf-c /Users/statusC/esp/esp-idf/components/protocomm /Users/statusC/esp/esp-idf/components/pthread /Users/statusC/esp/esp-idf/components/riscv /Users/statusC/esp/esp-idf/components/sdmmc /Users/statusC/esp/esp-idf/components/soc /Users/statusC/esp/esp-idf/components/spi_flash /Users/statusC/esp/esp-idf/components/spiffs /Users/statusC/esp/esp-idf/components/tcp_transport /Users/statusC/esp/esp-idf/components/ulp /Users/statusC/esp/esp-idf/components/unity /Users/statusC/esp/esp-idf/components/usb /Users/statusC/esp/esp-idf/components/vfs /Users/statusC/esp/esp-idf/components/wear_levelling /Users/statusC/esp/esp-idf/components/wifi_provisioning /Users/statusC/esp/esp-idf/components/wpa_supplicant
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/statusC/esp/z_github/HA_on_off_light/build
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /Users/statusC/esp/z_github/HA_on_off_light/build/bootloader/esp-idf/esptool_py && /Users/statusC/.espressif/python_env/idf5.1_py3.11_env/bin/python /Users/statusC/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /Users/statusC/esp/z_github/HA_on_off_light/build/bootloader/bootloader.bin
+Bootloader binary size 0x52f0 bytes. 0x2d10 bytes (35%) free.
+[2/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/esp_zb_valve.c.obj
+In file included from /Users/statusC/esp/z_github/HA_on_off_light/main/esp_zb_valve.c:23:
+/Users/statusC/esp/esp-idf/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+[7/8] Generating binary image from built executable
+esptool.py v4.7.dev1
+Creating esp32c6 image...
+Merged 3 ELF sections
+Successfully created esp32c6 image.
+Generated /Users/statusC/esp/z_github/HA_on_off_light/build/light_bulb.bin
+[8/8] cd /Users/statusC/esp/z_github/HA_on_off_light/build/esp-idf/esptool_py && /User...e/partition-table.bin /Users/statusC/esp/z_github/HA_on_off_light/build/light_bulb.bin
+light_bulb.bin binary size 0x71280 bytes. Smallest app partition is 0x89800 bytes. 0x18580 bytes (18%) free.
+
+ *  Task wird ausgeführt: /Users/statusC/.espressif/python_env/idf5.1_py3.11_env/bin/python /Users/statusC/esp/esp-idf/components/esptool_py/esptool/esptool.py -p /dev/cu.SLAB_USBtoUART -b 460800 --before default_reset --after hard_reset --chip esp32c6 write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x10000 light_bulb.bin 0x8000 partition_table/partition-table.bin 
+
+esptool.py v4.7.dev1
+Serial port /dev/cu.SLAB_USBtoUART
+Connecting....
+Chip is ESP32-C6 (QFN40) (revision v0.0)
+Features: WiFi 6, BT 5, IEEE802.15.4
+Crystal is 40MHz
+MAC: 40:4c:ca:ff:fe:41:3c:60
+BASE MAC: 40:4c:ca:41:3c:60
+MAC_EXT: ff:fe
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x00081fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 21232 bytes to 12876...
+Wrote 21232 bytes (12876 compressed) at 0x00000000 in 0.6 seconds (effective 284.5 kbit/s)...
+Hash of data verified.
+Compressed 463488 bytes to 249230...
+Wrote 463488 bytes (249230 compressed) at 0x00010000 in 6.5 seconds (effective 570.0 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 137...
+Wrote 3072 bytes (137 compressed) at 0x00008000 in 0.1 seconds (effective 221.3 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
