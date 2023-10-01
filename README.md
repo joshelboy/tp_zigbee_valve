@@ -14,7 +14,7 @@
 ![image](public/flash.png)
 2.  Thats it! Watch the output, it should automatically change to the ESP SI
 
-(See example.log and build.log for example logs)
+(See [example.log](public/example.log) and [build.log](public/build.log) for example logs)
 
 Fork based on:
 * [ESP Zigbee SDK Repo](https://github.com/espressif/esp-zigbee-sdk/tree/main/examples/esp_zigbee_HA_sample/HA_on_off_light)
